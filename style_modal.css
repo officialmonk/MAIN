@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0;
+    /* <-- Apparently some margin are still there even though it's hidden */
+    height: 100%;
+    overflow: hidden;
+}
+
+.credit_block {
+    position: fixed;
+    top: 50px;
+    width: 540px;
+    height: 330px;
+    margin: 0 auto;
+    background: #e8e8e8;
+    z-index: 1;
+
+}
+
+.modal-container_head {
+    width: 490px;
+    height: 55px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(to top, #dee1e7, #fbfcfc);
+
+}
+
+.title {
+    height: 55px;
+    width: 540px;
+    background: linear-gradient(to top, #dee1e7, #fbfcfc);
+    color: #ced1d6;
+}
+
+strong {
+    color: #000;
+    margin-left: -25px;
+    background: #e8e8e8;
+}
+
+.close {
+    height: 25px;
+    width: 25px;
+    background: #e6e6e6;
+    border: 1px solid #a0a5af;
+    border-radius: 50%;
+    text-align: center;
+    color: #767b8b;
+    cursor: pointer;
+
+}
+
+.input_info_cart {
+    width: 540px;
+    height: 100%;
+    background: #e6e6e6;
+}
+
+.credit_form {
+    width: 490px;
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+    background: #e6e6e6;
+}
+
+.cardnamber,
+.expires,
+.cvv {
+    background: #e6e6e6;
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+    margin-top: 22px;
+    align-items: center;
+
+}
+
+.cardnamber > input {
+    width: 330px;
+    height: 40px;
+    background: #f7f7f7;
+    border: none;
+    border-radius: 4px;
+}
+
+.expireson {
+    background: #e6e6e6;
+}
+
+.expireson > input {
+    height: 40px;
+    width: 163px;
+    background: #f7f7f7;
+    border: none;
+    border-radius: 4px;
+}
+
+.cvv {
+    justify-content: flex-start;
+}
+
+.cvv > input {
+    height: 40px;
+    width: 90px;
+    margin: 0 10px 0 34px;
+    background: #f7f7f7;
+    border: none;
+    border-radius: 4px;
+}
+
+.flex-credit {
+    display: none;
+    justify-content: center;
+}
+.proceed{
+    background: linear-gradient(to top, #306cf2, #5e9af8);
+    border: 1px solid #2865d4;
+    color: #fff;
+    font-size: 18px;
+    width: 120px;
+    height: 40px;
+    cursor: pointer;
+    position: relative;
+        
+}
